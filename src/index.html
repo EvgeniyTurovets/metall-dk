@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel='stylesheet' type='text/css' media='screen' href='./libs/slick/slick.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/main.min.css'>
+
+</head>
+<div class="app" style="min-height: 1000px">
+
+
+    <header class="header">
+        <div class="wrap">
+            <div class="header__row">
+                <div class="header__left">
+                    <a href="" class="logo">
+                        <img src="./img/des-logo.svg" class="des-logo">
+                        <img src="./img/logo-mob.svg" class="mob-logo">
+                    </a>
+                </div>
+                <div class="header__right">
+                    <div class="header__col header__col--search">
+                        <button type="button" class="catalog-btn" id="catalog-btn">
+                        <div class="catalog-btn__svgs">
+                            <div class="catalog-btn__svg">
+                                <svg width="24" height="6" viewBox="0 0 24 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="3" cy="3" r="2.5" stroke="white"/>
+                                    <circle cx="12" cy="3" r="2.5" stroke="white"/>
+                                    <circle cx="21" cy="3" r="2.5" stroke="white"/>
+                                </svg>
+                            </div>
+                            <div class="catalog-btn__svg catalog-btn__svg--mob">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="4" cy="4" r="3" stroke="white" stroke-width="2"/>
+                                    <circle cx="14" cy="4" r="3" stroke="white" stroke-width="2"/>
+                                    <circle cx="4" cy="14" r="3" stroke="white" stroke-width="2"/>
+                                    <circle cx="14" cy="14" r="3" stroke="white" stroke-width="2"/>
+                                </svg>
+                            </div>
+                            
+                            <div class="catalog-btn__svg catalog-btn__svg--active">   
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 17L17 1M17 17L1 1" stroke="#06AA53" stroke-width="2"/>
+                                </svg>
+                            </div>
+                            
+                        </div>
+                        Каталог   
+                    </button>
+                        <form class="header__search">
+                            <input type="text" id="header-search-input" placeholder="Поиск по каталогу" autocomplete="off">
+                            <button class="header-delete"></button>
+                            <button type="submit" class="header__search__submite">Найти</button>
+                            <div class="header__search__list header__search__list--click">
+                                <div class="header__search__grey"><span>Последние запросы</span></div>
+                                <ul class="last-report">
+                                    <li>
+                                        <a href="">pirelly formula ice </a><button></button>
+                                    </li>
+                                    <li>
+                                        <a href="">245/55 17 </a><button></button>
+                                    </li>
+                                    <li>
+                                        <a href="">acura nsx </a><button></button>
+                                    </li>
+                                    <li>
+                                        <a href="">pirelly formula ice </a><button></button>
+                                    </li>
+                                </ul>
+                                <div class="header__search__grey"><span>Совет</span>
+                                    <div>Введите размеры шины прямо в строку поиска, например:</div>
+                                </div>
+                                <ul class="sovet">
+                                    <li>
+                                        <a href=""> 235 55 17 <span class="sovet-grey">— все шины 235/55 R17</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="">245 65 16 * <span class="sovet-grey">— зимние шины 245/65 R16</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="">nokian 245 65 16 <span class="sovet-grey">— шины Nokian 245/65 R16</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="header__search__list header__search__list--change">
+                                <ul class="data-search">
+                                    <li>
+                                        <a href="">pirelly formula ice </a>
+                                    </li>
+                                    <li>
+                                        <a href="">245/55 17 </a>
+                                    </li>
+                                    <li>
+                                        <a href="">acura nsx </a>
+                                    </li>
+                                    <li>
+                                        <a href="">pirelly formula ice </a>
+                                    </li>
+                                </ul>
+                                <ul class="data-search">
+                                    <li>
+                                        <a href="">pirelly <span><span class="grey">в категории</span> Автомобильные шины</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="">pirelly <span><span class="grey">в категории</span> Автомобильные камеры</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="">pirelly <span><span class="grey">в категории</span> Мотошины</span></a>
+                                    </li>
+                                </ul>
+                                <ul class="data-search">
+                                    <li><a href="">Бренд Pirelly <img src="./img/search-img.jpg"></a></li>
+                                </ul>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="header__col">
+                        <div class="header__action">
+                            <a href="" class="header__action__item header__action__item--zakaz">
+                                <div class="header__action__icon">
+                                    <svg width="20" height="23" viewBox="0 0 20 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 6L10 10M1 6L10 2L19 6M1 6V17L10 21M10 10L19 6M10 10V21M19 6V17L10 21" stroke="white" stroke-width="2"/>
+                                </svg>
+                                </div>
+                                <div class="header__action__name">Заказы</div>
+                            </a>
+                            <a href="" class="header__action__item  header__action__item--like">
+                                <div class="header__action__icon">
+                                    <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18 4C15.7778 4 14.1111 5.0625 13 6.125C11.8889 5.0625 10.2222 4 8 4C4.66667 4 3 6.65625 3 8.78125C3 14.625 9.66667 18.875 13 21C16.3333 18.875 23 14.625 23 8.78125C23 6.65625 21.3333 4 18 4Z" stroke="white" stroke-width="2"/>
+                                </svg>
+                                </div>
+
+                                <div class="header__action__name">Избранное</div>
+                            </a>
+                            <a href="" class="header__action__item  header__action__item--cart">
+                                <div class="header__cart header__action__icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
+                                    <path d="M4 2L4.92308 5M4.92308 5L8 15L17.6082 13.5218C19.5596 13.2216 21 11.5426 21 9.56832V5H4.92308Z" stroke="white" stroke-width="2"/>
+                                    <circle cx="7" cy="20" r="2" stroke="white" stroke-width="2"/>
+                                    <circle cx="18" cy="20" r="2" stroke="white" stroke-width="2"/>
+                                </svg>
+                                    <span>5</span>
+                                </div>
+                                <div class="header__action__name">Корзина</div>
+                            </a>
+                        </div>
+                        <a class="header__login" href="">Войти</a>
+                    </div>
+                </div>
+            </div>
+            <div class="header__row">
+                <div class="header__left">
+                    <ul class="header__list header__list--reg">
+                        <li class="dropdown"><a href="">Москва</a>
+                            <ul>
+                                <li><a href="">Санкт-Петербург</a></li>
+                                <li><a href="">Ростов</a></li>
+                                <li><a href="">Город 2</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="header__right">
+                    <div class="header__col header__col--menu">
+                        <ul class="header__list">
+                            <li class="active"><a href="">Шины</a></li>
+                            <li><a href="">Диски</a></li>
+                            <li><a href="">Грузовые шины</a></li>
+                            <li><a href="">Мотошины</a></li>
+                            <li><a href="">Аккумуляторы</a></li>
+                            <li><a href="">Масла</a></li>
+                            <li class="acii"><a href="">Акции</a></li>
+                            <li class="service"><a href="">Сервис</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="header__col ">
+                        <ul class="header__list header__lis--right">
+                            <li class="dropdown drop-phone">
+                                <a href="">8 800 250 98 60</a>
+                                <ul>
+                                    <li>
+                                        <a href="">8 800 250 98 60</a>
+                                    </li>
+                                    <li>
+                                        <a href="">8 800 250 98 60</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="">Контакты</a></li>
+                        </ul>
+                        <div class="header__question">?</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header__catalog-des">
+            <div class="wrap">
+                <div class="catalog-des__wrap">
+                    <div class="catalog-des__col-left">
+                        <div class="catalog-section">
+                            <img src="./img/c-i-auto.svg">
+                            <span><a href="">Автомобили</a></span>
+                            <ul>
+                                <li>
+                                    <a href="">Шины</a>
+                                </li>
+                                <li>
+                                    <a href="">Диски</a>
+                                </li>
+                                <li>
+                                    <a href="">Колеса в сборе</a>
+                                </li>
+                                <li>
+                                    <a href="">Аккумуляторы</a>
+                                </li>
+                                <li>
+                                    <a href="">Масла</a>
+                                </li>
+                                <li>
+                                    <a href="">Датчики давления шин</a>
+                                </li>
+                                <li>
+                                    <a href="">Запчасти</a>
+                                </li>
+                                <li>
+                                    <a href="">Аксессуары</a>
+                                </li>
+                                <li>
+                                    <a href="">Противоугонные устройства</a>
+                                </li>
+                                <li>
+                                    <a href="">Электроника</a>
+                                </li>
+                                <li>
+                                    <a href="">Химия и косметика</a>
+                                </li>
+                                <li>
+                                    <a href="">Декор, защита</a>
+                                </li>
+                                <li>
+                                    <a href="">Камеры</a>
+                                </li>
+                                <li>
+                                    <a href="">Аксессуары для дисков</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="catalog-des__col-mid">
+                        <div class="catalog-des-col-mid__top">
+                            <div class="catalog-section">
+                                <img src="./img/c-i-moto.svg">
+                                <span><a href="">Мототехника</a></span>
+                                <ul>
+                                    <li>
+                                        <a href="">Шины для мотоциклов</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Шины для квадроциклов</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Камеры</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Аккумуляторы</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Масла</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Химия</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Запчасти</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Экипировка</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="catalog-section">
+                                <img src="./img/c-i-v.svg">
+                                <span><a href="">Грузовики и спецтехника</a></span>
+                                <ul>
+                                    <li>
+                                        <a href="">Шины для грузовиков</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Диски для грузовиков</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Аккумуляторы</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Масла</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Запчасти</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Шины для сельскохозтехники</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Шины для индустриальной техники</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="catalog-section">
+                                <img src="./img/c-i-velo.svg">
+                                <span><a href="">Велосипеды</a></span>
+                                <ul>
+                                    <li>
+                                        <a href="">Покрышки</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Камеры</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Велосипеды</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Ободные ленты</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                        <div class="catalog-des-col-mid__bot">
+                            <div class="catalog-section">
+                                <img src="./img/c-i-skidka.svg">
+                                <span><a href="">Акции и скидки</a></span>
+                                <ul>
+                                    <li>
+                                        <a href="">Акции</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Распродажа</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="catalog-slick">
+                                <div>
+                                    <div class="catalog-slick__item">
+                                        <img data-lazy="./img/slick-item.jpg">
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="catalog-slick__item">
+                                        <img data-lazy="./img/slick-item.jpg">
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="catalog-slick__item">
+                                        <img data-lazy="./img/slick-item.jpg">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog-des__col-right">
+                        <div class="catalog-section">
+                            <div class="catalog-section__no-icon"></div>
+                            <span><a href="">Сервис</a></span>
+                            <ul>
+                                <li>
+                                    <a href="">Шиномонтаж</a>
+                                </li>
+                                <li>
+                                    <a href="">Ремонт и правка дисков</a>
+                                </li>
+                                <li>
+                                    <a href="">Сезонное хранение</a>
+                                </li>
+                                <li>
+                                    <a href="">Ремонт шин</a>
+                                </li>
+                                <li>
+                                    <a href="">Мотошиномонтаж</a>
+                                </li>
+                                <li>
+                                    <a href="">Мелкосрочный ремонт</a>
+                                </li>
+                                <li>
+                                    <a href="">Обслуживание систем TPMS </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="catalog-section catalog-section--last">
+                            <ul>
+                                <li><a href="">Бренды</a></li>
+                                <li><a href="">Гарантия</a></li>
+                                <li><a href="">Доставка</a></li>
+                                <li><a href="">Оплата</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header__catalog-mob">
+            <div class="wrap">
+                <div class="header__catalog-mob--wrap">
+                    <div class="catalog-section">
+                        <img src="./img/mob/c-i-auto.svg">
+                        <span><a href="">Автомобили</a></span>
+                        <ul>
+                            <li>
+                                <a href="">Шины</a>
+                            </li>
+                            <li>
+                                <a href="">Диски</a>
+                            </li>
+                            <li>
+                                <a href="">Колеса в сборе</a>
+                            </li>
+                            <li>
+                                <a href="">Аккумуляторы</a>
+                            </li>
+                            <li>
+                                <a href="">Масла</a>
+                            </li>
+                            <li>
+                                <a href="">Датчики давления шин</a>
+                            </li>
+                            <li>
+                                <a href="">Запчасти</a>
+                            </li>
+                            <li>
+                                <a href="">Аксессуары</a>
+                            </li>
+                            <li>
+                                <a href="">Противоугонные устройства</a>
+                            </li>
+                            <li>
+                                <a href="">Электроника</a>
+                            </li>
+                            <li>
+                                <a href="">Химия и косметика</a>
+                            </li>
+                            <li>
+                                <a href="">Декор, защита</a>
+                            </li>
+                            <li>
+                                <a href="">Камеры</a>
+                            </li>
+                            <li>
+                                <a href="">Аксессуары для дисков</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="catalog-section">
+                        <img src="./img/mob/c-i-moto.svg">
+                        <span><a href="">Мототехника</a></span>
+                        <ul>
+                            <li>
+                                <a href="">Шины для мотоциклов</a>
+                            </li>
+                            <li>
+                                <a href="">Шины для квадроциклов</a>
+                            </li>
+                            <li>
+                                <a href="">Камеры</a>
+                            </li>
+                            <li>
+                                <a href="">Аккумуляторы</a>
+                            </li>
+                            <li>
+                                <a href="">Масла</a>
+                            </li>
+                            <li>
+                                <a href="">Химия</a>
+                            </li>
+                            <li>
+                                <a href="">Запчасти</a>
+                            </li>
+                            <li>
+                                <a href="">Экипировка</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="catalog-section">
+                        <img src="./img/mob/c-i-v.svg">
+                        <span><a href="">Грузовики и спецтехника</a></span>
+                        <ul>
+                            <li>
+                                <a href="">Шины для грузовиков</a>
+                            </li>
+                            <li>
+                                <a href="">Диски для грузовиков</a>
+                            </li>
+                            <li>
+                                <a href="">Аккумуляторы</a>
+                            </li>
+                            <li>
+                                <a href="">Масла</a>
+                            </li>
+                            <li>
+                                <a href="">Запчасти</a>
+                            </li>
+                            <li>
+                                <a href="">Шины для сельскохозтехники</a>
+                            </li>
+                            <li>
+                                <a href="">Шины для индустриальной техники</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="catalog-section">
+                        <img src="./img/mob/c-i-velo.svg">
+                        <span><a href="">Велосипеды</a></span>
+                        <ul>
+                            <li>
+                                <a href="">Покрышки</a>
+                            </li>
+                            <li>
+                                <a href="">Камеры</a>
+                            </li>
+                            <li>
+                                <a href="">Велосипеды</a>
+                            </li>
+                            <li>
+                                <a href="">Ободные ленты</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="catalog-section">
+                        <div class="catalog-section__no-icon"></div>
+                        <span><a href="">Сервис</a></span>
+                        <ul>
+                            <li>
+                                <a href="">Шиномонтаж</a>
+                            </li>
+                            <li>
+                                <a href="">Ремонт и правка дисков</a>
+                            </li>
+                            <li>
+                                <a href="">Сезонное хранение</a>
+                            </li>
+                            <li>
+                                <a href="">Ремонт шин</a>
+                            </li>
+                            <li>
+                                <a href="">Мотошиномонтаж</a>
+                            </li>
+                            <li>
+                                <a href="">Мелкосрочный ремонт</a>
+                            </li>
+                            <li>
+                                <a href="">Обслуживание систем TPMS </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="catalog-section">
+                        <img src="./img/mob/c-i-skidka.svg">
+                        <span><a href="">Акции и скидки</a></span>
+                        <ul>
+                            <li>
+                                <a href="">Акции</a>
+                            </li>
+                            <li>
+                                <a href="">Распродажа</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="header-catalog-mob-bot">
+                        <ul class="header__list header__list--tel">
+                            <li class="dropdown"><a href="tel:+74951251747">+7 495 125-17-47</a>
+                                <ul>
+                                    <li><a href="">+7 495 125-17-47</a></li>
+                                    <li><a href="">+7 495 125-17-47</a></li>
+                                    <li><a href="">+7 495 125-17-47</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="">Контакты</a></li>
+                        </ul>
+                        <ul class="header__list">
+                            <li class="dropdown"><a href="">Москва</a>
+                                <ul>
+                                    <li><a href="">Санкт-Петербург</a></li>
+                                    <li><a href="">Ростов</a></li>
+                                    <li><a href="">Город 2</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="">Контакты</a></li>
+                        </ul>
+                        <div class="header__action">
+                            <a class="header__login" href="">Войти</a>
+                            <a href="" class="header__action__item header__action__item--zakaz">
+                                <div class="header__action__icon">
+                                    <svg width="20" height="23" viewBox="0 0 20 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 6L10 10M1 6L10 2L19 6M1 6V17L10 21M10 10L19 6M10 10V21M19 6V17L10 21" stroke="white" stroke-width="2"></path>
+                                </svg>
+                                </div>
+                                <div class="header__action__name">Заказы</div>
+                            </a>
+                            <a href="" class="header__action__item  header__action__item--like">
+                                <div class="header__action__icon">
+                                    <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18 4C15.7778 4 14.1111 5.0625 13 6.125C11.8889 5.0625 10.2222 4 8 4C4.66667 4 3 6.65625 3 8.78125C3 14.625 9.66667 18.875 13 21C16.3333 18.875 23 14.625 23 8.78125C23 6.65625 21.3333 4 18 4Z" stroke="white" stroke-width="2"></path>
+                                </svg>
+                                </div>
+
+                                <div class="header__action__name">Избранное</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+</div>
+<script src="./libs/jquery/jquery.min.js"></script>
+<script src="./libs/slick/slick.min.js"></script>
+<script src="./js/main.js"></script>
+</body>
+
+</html>
